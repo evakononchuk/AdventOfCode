@@ -1,11 +1,12 @@
 'use strict';
-const day1 = require('./day1');
+const data = require('./day1_p1');
 
-const arr = [1721, 979, 366, 299, 675, 1456];
-for (let i = 0; i <= arr.length; i++) {
-  for (let j = i + 1; j <= arr.length; j++) {
-    if (arr[i] + arr[j] === 2020) {
-      console.log(arr[i] * arr[j]);
-    }
-  }
-}
+describe('Searching sum and multy from two entries', () => {
+  test('Two entries that sum to 2020', () => {
+    expect(data.sum).toBe(2020);
+  });
+
+  test('Two entries multiply them together', () => {
+    expect(data.multy).toBe(514579);
+  });
+});
