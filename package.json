@@ -1,0 +1,27 @@
+{
+  "name": "adventofcode",
+  "version": "1.0.0",
+  "description": "Cool Tasks",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/evakononchuk/AdventOfCode.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/evakononchuk/AdventOfCode/issues"
+  },
+  "homepage": "https://github.com/evakononchuk/AdventOfCode#readme",
+  "devDependencies": {
+    "eslint": "^8.19.0",
+    "eslint-plugin-jest": "^26.5.3",
+    "jest": "^28.1.2",
+    "prettier": "^2.7.1"
+  }
+}
