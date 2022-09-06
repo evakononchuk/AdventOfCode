@@ -8,5 +8,3 @@ const num = fs.readFileSync(
 const strings = num.slice(/\d+-\d+\s[a-z]:\s\w+/g);
 const str = strings.split('\n');
 const result = wrap.wrapper(str);
-
-//console.dir(result);

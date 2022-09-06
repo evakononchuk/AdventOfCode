@@ -6,5 +6,5 @@ const str = strings.split('\n');
 
 test('Count quantity correct passwords', () => {
   const result = wrap.wrapper(str);
-  expect(result).toBe(2);
+  expect(result).toBe(396);
 });
