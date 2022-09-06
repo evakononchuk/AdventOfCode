@@ -1,5 +1,5 @@
 'use strict';
-// const num = '3-4 l: blllk\n1-5 j: jjjjgj\n1-3 b: cdefg\n1-3 a: abcde';
+// const num = '1-3 a: abcde\n1-3 b: cdefg\n2-9 c: ccccccccc\n1-3 a: abcde';
 // const strings = num.slice(/\d+-\d+\s[a-z]:\s\w+/g);
 // const str = strings.split('\n');
 const wrapper = str => {
@@ -11,13 +11,13 @@ const wrapper = str => {
     const pass = elements[2];
 
     for (let i = 0; i < pass.length; i++) {
-      if (pass[i] === letter) {
-        if (
-          pass.indexOf(pass[i + 1]) === numbers[0] &&
-          pass.charAt(numbers[1] - 1) !== letter
-        ) {
-          qty++;
-        }
+      if (
+        pass[i] === letter &&
+        pass.indexOf(pass[i + 1]) === numbers[0] &&
+        pass.charAt(numbers[1] - 1) !== letter
+      ) {
+        qty++;
+        console.log(qty);
       }
     }
   }
